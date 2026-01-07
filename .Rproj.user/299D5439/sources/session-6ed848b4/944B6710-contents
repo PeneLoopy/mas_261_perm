@@ -1,10 +1,8 @@
-library/
-local/
-cellar/
-lock/
-python/
-sandbox/
-staging/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
 
 /.quarto/
 **/*.quarto_ipynb
+/_site/
