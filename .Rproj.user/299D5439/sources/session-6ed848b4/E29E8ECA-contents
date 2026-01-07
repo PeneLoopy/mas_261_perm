@@ -28,7 +28,7 @@ today_fmt <- stamp("Saturday, January 1, 1999", quiet = T)(today)  # formats dat
 
 # Syllabus and Course Links
 
-## Row {height="70%"}
+## Row
 
 [**Fall 2025 Syllabus**](https://docs.google.com/document/d/1lfvqJBmjWDcDI7FiPJAkV8pEzeG-Y4L1IyeeqEgR4uo/edit?usp=sharing){target="_blank"}
 
@@ -49,10 +49,7 @@ today_fmt <- stamp("Saturday, January 1, 1999", quiet = T)(today)  # formats dat
   - Missing lecture numbers are associated with review lectures and in-class test days.
 
 
-## Row {height="30%"}
-
-[**Read this letter about
-AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=url-share){target="_blank"}
+[**Read this letter about AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=url-share){target="_blank"}
 
 -   Using AI in coding and writing is commonplace and
     helpful if used cautiously and ethically.
