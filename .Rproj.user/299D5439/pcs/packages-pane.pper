@@ -1,0 +1,7 @@
+{
+    "installOptions": {
+        "installFromRepository": true,
+        "libraryPath": "C:/Users/Penelope/Desktop/PeneLoopy_Home_Base/mas_261_perm/renv/library/windows/R-4.5/x86_64-w64-mingw32",
+        "installDependencies": true
+    }
+}

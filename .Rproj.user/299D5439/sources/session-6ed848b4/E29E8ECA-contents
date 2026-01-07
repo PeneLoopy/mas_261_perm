@@ -1,0 +1,677 @@
+---
+title: ""
+format: dashboard
+---
+
+```{r include=F}
+#| label: setup
+
+options(scipen=100)                         # suppress scientific notation
+                                            # install pacman if needed
+if (!require("pacman")) install.packages("pacman", repos = "http://lib.stat.cmu.edu/R/CRAN/")
+pacman::p_load(pacman, tidyverse, ggthemes, gridExtra, magrittr,
+               kableExtra, gt)
+
+#pacman::p_loaded()
+
+```
+
+
+```{r echo=F}
+#| label: created formatted date
+# create variables for inline code
+today <- Sys.Date()                                                # saves today's date
+today_fmt <- stamp("Saturday, January 1, 1999", quiet = T)(today)  # formats date
+
+```
+
+
+# Syllabus and Course Links
+
+## Row {height="70%"}
+
+[**Fall 2025 Syllabus**](https://docs.google.com/document/d/1lfvqJBmjWDcDI7FiPJAkV8pEzeG-Y4L1IyeeqEgR4uo/edit?usp=sharing){target="_blank"}
+
+<br>
+
+**Contact Information: Professor Pooler (pspooler\@syr.edu) - Office: WSOM Room 518**
+
+**NOTES:**  
+
+- The website was last updated on `r today_fmt`.
+
+- This is the permanent version of Professor Pooler's MAS 261 Course Website and is only updated at the end of the semester or when substantial changes are made to the material during the semester.
+
+- Homework assignments and 'Practice Questions' for tests are not posted on the permanent MAS 261 Website.
+
+- Lectures that are solely devoted to review and preparation for mid-semester tests and the final  exam are also not available on the permanent website.  
+
+  - Missing lecture numbers are associated with review lectures and in-class test days.
+
+
+## Row {height="30%"}
+
+[**Read this letter about
+AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=url-share){target="_blank"}
+
+-   Using AI in coding and writing is commonplace and
+    helpful if used cautiously and ethically.
+
+-   This is a great 'letter' from a high school student who
+    'broke up' with AI because she felt it was supplanting
+    her own voice. It's worth your time to read and consider
+    it.
+
+**Useful Software Links**
+
+-   [Posit Cloud](https://posit.cloud/){target="_blank"}
+
+-   [R](https://cran.r-project.org/){target="_blank"}
+
+-   [RStudio](https://posit.co/download/rstudio-desktop/){target="_blank"}
+
+-   [Quarto](https://quarto.org/docs/get-started/){target="_blank"}
+
+-   [RPubs](https://rpubs.com/){target="_blank"}
+
+**OPTIONAL Software Training**
+
+-   [LinkedIn
+    Learning](https://linkedinlearning.syr.edu/){target="_blank"} -
+    Free for Syracuse University Students, Staff, and
+    Faculty
+
+    -   [R for Data Science: Analysis and
+        Visualization](https://www.linkedin.com/learning/r-for-data-science-analysis-and-visualization?u=76816226){target="_blank"} -
+        This training is optional and provides a good
+        introduction to R and RStudion whch are used in this
+        course.
+
+    -   [Python Essential
+        Training](https://www.linkedin.com/learning/python-essential-training-18764650?u=76816226){target="_blank"} -
+        Python is not used in this course but it is helpful
+        for Analytics and Data Science.
+
+<br>
+
+-   [DataCamp](https://www.datacamp.com/){target="_blank"} -
+    An excellent (but not free) online learning center for
+    many software packages. Costs can be subsidized (see
+    below).
+
+-   [Whitman WIRE
+    Initiative](https://whitman.syracuse.edu/experiential-learning/wire-initiative){target="_blank"}
+
+    -   The WIRE initiative will subsidize costs of online
+        software training the results in certification.
+
+    -   Contact their office to arrange a meeting and
+        develop a plan.
+
+<br>
+
+-   [SU Open Source Program Office
+    (OSPO)](https://opensource.syracuse.edu/){target="_blank"} -
+    OSPO offers workshops in open source software such as
+    R/RStudio, Python, Github and facilitates communication
+    between open source software users on campus.
+
+# Lectures 1-9
+
+## Row {height="45%"}
+
+[**MAS 261 Student Files for Lectures 1-8 - R Project on
+Posit
+Cloud**](https://posit.cloud/content/10735606){target="_blank"} -
+Click link to open file in your Posit Cloud and save it.
+Once file is saved to your account, you should not click
+this link again.
+
+-   Note: To make formatted tables in your .qmd more visible
+    in the file output, add the following text after
+    **`kable() |> kable_styling(full_width = F)`**
+
+-   [**VIDEO - Creating a FREE Posit Cloud
+    Account**](https://video.syr.edu/media/t/1_a0qm1usm/352723432){target="_blank"}
+
+-   [**VIDEO - Intro to Accessing Student Lecture R files in
+    Posit
+    Cloud**](https://video.syr.edu/media/t/1_btulm9h8/352723432){target="_blank"}
+
+-   [**VIDEO - OPTIONAL Useful Modifications to the Global
+    Options in
+    RStudio**](https://video.syr.edu/media/t/1_bx1cmhms/352723432){target="_blank"}
+
+-   [**VIDEO - Navigating and R File and Running Code in an
+    R .qmd File in Posit
+    Cloud**](https://video.syr.edu/media/t/1_0pj3i35n/352723432){target="_blank"}
+
+-   [**VIDEO - OPTIONAL - Rendering and Printing an R. .qmd
+    File in Posit
+    Cloud**](https://video.syr.edu/media/t/1_b1kccc7t/352723432){target="_blank"}
+
+## Row {height="55%"}
+
+[***Poll Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank" style="color:lightgreen"}
+
+My User Name: **penelopepoolereisenbies685**
+
+<br>
+
+**Data Distributions**
+
+-   **Lecture 9 - Central Limit Theorem**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1223885){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1223886){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/16OV59_uT7RNe2CaQrsOsqG8s-P3A9nsm/view?usp=sharing)
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 9 - 2025-09-23 - 11:00
+        AM**](https://video.syr.edu/media/t/1_hvo86l7u/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 8 - Sampling Distribution of the Sample Mean /
+    CLT**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1220620){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1220604){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1-8uq_NN7POxSsgKovo-i9USFuAFORYFV/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 8 - 2025-09-18 - 11:00
+        AM**](https://video.syr.edu/media/t/1_0zuqwmli/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 7 - Empirical Rule / Finding X from a
+    Probability**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1220819){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1220821){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1-29uIhO6YSI_jGL8472QZx99xQ1WdxH-/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 7 - 2025-09-16 - 11:00
+        AM**](https://video.syr.edu/media/t/1_x4smsidj/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 6 - Introduction to the Normal Distribution**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1220421){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1217759){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1ujIhyPile-Zu-dhTfkQD5zVdNz-T5mq2/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 6 - 2025-09-11 - 11:00
+        AM**](https://video.syr.edu/media/t/1_xro0s646/387188682){target="_blank"}
+
+<br>
+
+**Describing Data**
+
+<br>
+
+-   **Lecture 5 - Visualizing Categorical and Quantitative
+    Data**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1217502){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1217503){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1ugev0bGNZU1_fR4qUDkydQhEgG3hRTY5/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 5 - 2025-09-09 - 11:00
+        AM**](https://video.syr.edu/media/t/1_wiyrs2v6/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 4 - Data Visualizations, Boxplots, Outliers**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1215503){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1215504){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1o63tDFhCWLqsbHvsSp2o-yZ2FXAz58Py/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 4 - 2025-09-04 - 11:00
+        AM**](https://video.syr.edu/media/t/1_83siyp0z/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 3 - Measures of Variability**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1215491){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1215492){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1o5O5NY2gcX0oDGzniBb_cQJdGEZCRZPn/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 3 - 2025-09-02 - 11:00
+        AM**](https://video.syr.edu/media/t/1_8szm67kp/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 2 - Measures of Central Tendancy**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1212300){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1212302){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1B7X9kvma8Tfdrj1jkJmurekhhTH8rKll/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 2 - 2025-08-28 - 11:00
+        AM**](https://video.syr.edu/media/t/1_a81ewlj7/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 1 - Course Introductions and Types of Data**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1211541){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1211543){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1mbjjq4OMmBb81ELnYVK73EVp0nIowyX8/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+<br>
+
+# Lectures 13-20
+
+## Row {height="35%"}
+
+[**MAS 261 Student Files for Lectures 13-20 - R Project on
+Posit
+Cloud**](https://posit.cloud/content/8560110){target="_blank"} -
+Click link to open file in your Posit Cloud and save it.
+Once file is saved to your account, you should not click
+this link again.
+
+-   Note: To make formatted tables in your .qmd more visible
+    in the file output, add the following text after
+    **`kable() |> kable_styling(full_width = F)`**
+
+## Row {height="65%"}
+
+
+[***Poll Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank" style="color:lightgreen"}
+
+My User Name: **penelopepoolereisenbies685**
+
+<br>
+
+
+**Hypotheses and Correlations**
+
+-   **Lecture 20 - Introduction to Correlation and
+    Covariance**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1239229){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1239230){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1CvWpRPqul2sx2PI121_ryCa0P_cV8jRc/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 20 - 2025-10-30 - 11:00
+        AM**](https://video.syr.edu/media/t/1_pq0muk4u/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 19 - Contingency Tables and Two Sample Tests
+    of Proportions**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1238251){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1238253){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1Ra-ivkv6cN8UlZLvQCpKjzEDGzn0c9tD/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 19 - 2025-10-28 - 11:00
+        AM**](https://video.syr.edu/media/t/1_h93j0132/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 18 - Two Sample t-Tests and Confidence
+    Intervals**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1236174){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1236179){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1bxnZjFgGjISe0zjIeja2Kmr4Lx7EKWa4/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 18 - 2025-10-23 - 11:00
+        AM**](https://video.syr.edu/media/t/1_gu072tiw/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 17 - Language of Hypothesis Testing/One Sample
+    t-tests**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1235312){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1235311){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1XujkJNFOnC7viS_VqTQA_6Bl09RradHz/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 17 - 2025-10-21 - 11:00
+        AM**](https://video.syr.edu/media/t/1_l28queue/387188682){target="_blank"}
+
+<br>
+
+**Estimates and Confidence**
+
+<br>
+
+-   **Lecture 16 - Proportions, Percentages and Confidence
+    Intervals**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1232622){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1232623){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1rIuwLPW90rioY-2A-B1ksXDGg27s8wSh/view?usp=sharing){target="_blank"}
+
+    -   [**t-Table**](https://drive.google.com/file/d/1-YnYJbk-5S5AmLs1VYovg-rxnoht3hS_/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 16 - 2025-10-16 - 11:00
+        AM**](https://video.syr.edu/media/t/1_dzvjyzw4/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 14 - Effect of Sample Size and Confidence
+    level on Confidence Intervals**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1229841){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1229843){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1QTKUEHi59h-ufQ5PVbTdssKj1wabyERf/view?usp=sharing){target="_blank"}
+
+    -   [**t-Table**](https://drive.google.com/file/d/1-YnYJbk-5S5AmLs1VYovg-rxnoht3hS_/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 14 - 2025-10-09 - 11:00
+        AM**](https://video.syr.edu/media/t/1_p9jg8crx/387188682){target="_blank"} -
+        Recording is watchable, but audio issues occurred
+        which will be resolved before the next lecture.
+        Please let me know if you have questions.
+
+<br>
+
+-   **Lecture 13 - Intro. to the t Distribution and
+    Confidence Intervals**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1229168){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1229172){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1HpmiXjRTZ4JCjx1dAbog_gWuhTHIhw6y/view?usp=sharing){target="_blank"}
+
+    -   [**Posit
+        Cloud**](https://posit.cloud/){target="_blank"}
+
+        -   Your saved file with your work will be in your
+            account.
+
+    -   [**VIDEO - Lecture 13 - 2025-10-07 - 11:00
+        AM**](https://video.syr.edu/media/t/1_eav05x7l/387188682){target="_blank"}
+
+# Lectures 21-27
+
+## Row {height="35%"}
+
+[**MAS 261 Student Files for Lectures 21-28 - R Project on
+Posit
+Cloud**](https://posit.cloud/content/11322437){target="_blank"} -
+Click link to open file in your Posit Cloud and save it.
+Once file is saved to your account, you should not click
+this link again.
+
+-   Note: To make formatted tables in your .qmd more visible
+    in the file output, add the following text after
+    **`kable() |> kable_styling(full_width = F)`**
+
+## Row {height="65%"}
+
+[***Poll Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank" style="color:lightgreen"}
+
+My User Name: **penelopepoolereisenbies685**
+
+<br>
+
+**Linear relationships**
+
+-   **Lecture 27 - Introduction to Linear Transformations**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1253624){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1253626){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1Y48deDOVxyKr7PQWAHy2xgqM4ZNfn7-0/view?usp=sharing){target="_blank"}
+
+    -   [**Course
+        Evaluations**](http://coursefeedback.syr.edu/){target="_blank"}
+
+    -   [**VIDEO - Lecture 27 - 2025-12-02 - 11:00
+        AM**](https://video.syr.edu/media/t/1_8cz95w06/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 26 - Multiple Linear Regression**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1252678){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1252679){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1vVLQ4qVJBsQQgV0axE3lJAi8zbi9swQy/view?usp=sharing){target="_blank"}
+
+    -   [**VIDEO - Lecture 26 - 2025-11-20 - 11:00
+        AM**](https://video.syr.edu/media/t/1_gujlzyt0/387188682){target="_blank"}
+
+<br>
+
+-   **Lecture 25 - Simple Linear Regression Continued**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1247035){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1247033){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1v-JYJh1Xx147UQUtK4JUJMnZoJnJwyhu/view?usp=sharing){target="_blank"}
+
+    -   NOTES:
+
+        -   This lecture was recorded with no audio. I have
+            checked my microphones and I will review the key
+            details during Lecture 26.\
+
+        -   I am also positing last year's recording below.\
+
+        -   In 2024, I used a different in-class polling
+            system so the questions in the video will appear
+            differently than those given in in class in
+
+            2025. 
+
+        -   [**VIDEO - Lecture 25 - 2024-11-19 - 11:00
+            AM**](https://video.syr.edu/media/t/1_10lktgyr/354195742){target="_blank"}
+
+<br>
+
+-   **Lecture 24 - Introduction to Simple Linear
+    Regression**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1245145){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1245147){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1ztx45iKyfybZGIp8iI8NrWn_k5uHzk6N/view?usp=sharing){target="_blank"}
+
+<br>
+
+-   **Lecture 21 - Introduction to Portfolio Management**
+
+    -   [**Slides**](https://rpubs.com/PeneLope_PE/1241207){target="_blank"}
+
+    -   [**Notes**](https://rpubs.com/PeneLope_PE/1241208){target="_blank"}
+
+    -   [**PDF**](https://drive.google.com/file/d/1-IfsrZvPQ9vAZsGdJWSzhQaMbGVdfBwC/view?usp=sharing){target="_blank"}
+
+    -   [**VIDEO - Lecture 21 - 2025-11-04 - 11:00
+        AM**](https://video.syr.edu/media/t/1_rwk0depj/387188682){target="_blank"}
+
+<br>
+
+
+# Installing R and Rstudio
+
+## Row
+
+**Notes**
+
+-   Students in MAS 261 are NOT required to install R and
+    RStudio on their laptop but they are welcome to.
+
+-   R and RStudio are two separate software components.
+    Download and install R and then download and install
+    RStudio.
+
+-   When updating your version of R or RStudio, uninstall
+    the previous version first.
+
+## Row
+
+**Downloading and Installing R**
+
+-   R can be downloaded from the [**Comprehensive R Archive
+    Network**](https://cran.r-project.org/){target="_blank"}
+
+-   [**Video Demo for downloading and installing R on a
+    Windows
+    OS**](https://video.syr.edu/media/t/1_m775pb4g/352723432){target="_blank"}
+
+-   Mac installation is similar.
+
+-   If you do not need to uninstall an out-of-date version
+    of R, skip to 0:53.
+    
+-   The version shown in the video is from August of 2024
+    and is out-of-date.
+
+-   The current version of R is **`4.5.2`**.
+
+<br>
+
+**Downloading and Installing RStudio**
+
+-   RStudio can be downloaded from
+    [**Posit**](https://posit.co/download/rstudio-desktop/){target="_blank"},
+    the parent company of RStudio.
+
+-   [**Video Demo for downloading and installing RStudio on
+    a Windows
+    OS**](https://video.syr.edu/media/t/1_my39umi3/352723432){target="_blank"}
+
+-   Mac installation is similar.
+
+-   If you do not need to uninstall an out-of-date version
+    of RStudio, skip to 0:56.
+
+-   The version shown in the video is from August of 2024
+    and is out-of-date.
+
+-   The current version of RStudio is **`2025.9.2.418`**.
