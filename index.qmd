@@ -16,7 +16,6 @@ pacman::p_load(pacman, tidyverse, ggthemes, gridExtra, magrittr,
 
 ```
 
-
 ```{r echo=F}
 #| label: created formatted date
 # create variables for inline code
@@ -25,31 +24,39 @@ today_fmt <- stamp("Saturday, January 1, 1999", quiet = T)(today)  # formats dat
 
 ```
 
-
 # Syllabus and Course Links
 
 ## Row
 
-[**Fall 2025 Syllabus**](https://docs.google.com/document/d/1lfvqJBmjWDcDI7FiPJAkV8pEzeG-Y4L1IyeeqEgR4uo/edit?usp=sharing){target="_blank"}
+[**Fall 2025
+Syllabus**](https://docs.google.com/document/d/1lfvqJBmjWDcDI7FiPJAkV8pEzeG-Y4L1IyeeqEgR4uo/edit?usp=sharing){target="_blank"}
 
 <br>
 
-**Contact Information: Professor Pooler (pspooler\@syr.edu) - Office: WSOM Room 518**
+**Contact Information: Professor Pooler
+(pspooler\@syr.edu) - Office: WSOM Room 518**
 
-**NOTES:**  
+**NOTES:**
 
-- The website was last updated on `r today_fmt`.
+-   The website was last updated on `r today_fmt`.
 
-- This is the permanent version of Professor Pooler's MAS 261 Course Website and is only updated at the end of the semester or when substantial changes are made to the material during the semester.
+-   This is the permanent version of Professor Pooler's MAS
+    261 Course Website and is only updated at the end of the
+    semester or when substantial changes are made to the
+    material during the semester.
 
-- Homework assignments and 'Practice Questions' for tests are not posted on the permanent MAS 261 Website.
+-   Homework assignments and 'Practice Questions' for tests
+    are not posted on the permanent MAS 261 Website.
 
-- Lectures that are solely devoted to review and preparation for mid-semester tests and the final  exam are also not available on the permanent website.  
+-   Lectures that are solely devoted to review and
+    preparation for mid-semester tests and the final exam
+    are also not available on the permanent website.
 
-  - Missing lecture numbers are associated with review lectures and in-class test days.
+    -   Missing lecture numbers are associated with review
+        lectures and in-class test days.
 
-
-[**Read this letter about AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=url-share){target="_blank"}
+[**Read this letter about
+AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=url-share){target="_blank"}
 
 -   Using AI in coding and writing is commonplace and
     helpful if used cautiously and ethically.
@@ -149,7 +156,9 @@ this link again.
 
 ## Row {height="55%"}
 
-[***Poll Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank" style="color:lightgreen"}
+[***Poll
+Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank"
+style="color:lightgreen"}
 
 My User Name: **penelopepoolereisenbies685**
 
@@ -349,13 +358,13 @@ this link again.
 
 ## Row {height="65%"}
 
-
-[***Poll Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank" style="color:lightgreen"}
+[***Poll
+Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank"
+style="color:lightgreen"}
 
 My User Name: **penelopepoolereisenbies685**
 
 <br>
-
 
 **Hypotheses and Correlations**
 
@@ -525,7 +534,9 @@ this link again.
 
 ## Row {height="65%"}
 
-[***Poll Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank" style="color:lightgreen"}
+[***Poll
+Everywhere***](https://pollev.com/penelopepoolereisenbies685){target="_blank"
+style="color:lightgreen"}
 
 My User Name: **penelopepoolereisenbies685**
 
@@ -613,7 +624,6 @@ My User Name: **penelopepoolereisenbies685**
 
 <br>
 
-
 # Installing R and Rstudio
 
 ## Row
@@ -645,7 +655,7 @@ My User Name: **penelopepoolereisenbies685**
 
 -   If you do not need to uninstall an out-of-date version
     of R, skip to 0:53.
-    
+
 -   The version shown in the video is from August of 2024
     and is out-of-date.
 
