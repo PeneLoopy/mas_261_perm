@@ -1,5 +1,0 @@
-"0","#| label: created formatted date"
-"0","# create variables for inline code"
-"0","today <- Sys.Date()                                                # saves today's date"
-"0","today_fmt <- stamp(""Saturday, January 1, 1999"", quiet = T)(today)  # formats date"
-"0",""
