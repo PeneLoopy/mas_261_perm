@@ -28,17 +28,23 @@ today_fmt <- stamp("Saturday, January 1, 1999", quiet = T)(today)  # formats dat
 
 ## Row
 
+**This website was last updated on `r today_fmt`.**
+
+<br>
+
 [**Fall 2025
 Syllabus**](https://docs.google.com/document/d/1lfvqJBmjWDcDI7FiPJAkV8pEzeG-Y4L1IyeeqEgR4uo/edit?usp=sharing){target="_blank"}
+
+  - Syllabus is updated at the end of the most recent completed semester.
 
 <br>
 
 **Contact Information: Professor Pooler
 (pspooler\@syr.edu) - Office: WSOM Room 518**
 
-**NOTES:**
+<br>
 
--   The website was last updated on `r today_fmt`.
+**NOTES:**
 
 -   This is the permanent version of Professor Pooler's MAS
     261 Course Website and is only updated at the end of the
@@ -196,10 +202,11 @@ My User Name: **penelopepoolereisenbies685**
 
         -   Your saved file with your work will be in your
             account.
-            
+
 <br>
 
--   **Lecture 7 - Empirical Rule / Finding X from a Probability**
+-   **Lecture 7 - Empirical Rule / Finding X from a
+    Probability**
 
     -   [**Slides**](https://rpubs.com/PeneLope_PE/1220819){target="_blank"}
 
@@ -227,8 +234,7 @@ My User Name: **penelopepoolereisenbies685**
         Cloud**](https://posit.cloud/){target="_blank"}
 
         -   Your saved file with your work will be in your
-            account.
-<br>
+            account. <br>
 
 **Describing Data**
 
@@ -263,8 +269,7 @@ My User Name: **penelopepoolereisenbies685**
         Cloud**](https://posit.cloud/){target="_blank"}
 
         -   Your saved file with your work will be in your
-            account.
-<br>
+            account. <br>
 
 -   **Lecture 3 - Measures of Variability**
 
@@ -371,8 +376,7 @@ My User Name: **penelopepoolereisenbies685**
         Cloud**](https://posit.cloud/){target="_blank"}
 
         -   Your saved file with your work will be in your
-            account.
-<br>
+            account. <br>
 
 -   **Lecture 18 - Two Sample t-Tests and Confidence
     Intervals**
@@ -525,7 +529,8 @@ My User Name: **penelopepoolereisenbies685**
 
 <br>
 
--   **Lecture 24 - Introduction to Simple Linear Regression**
+-   **Lecture 24 - Introduction to Simple Linear
+    Regression**
 
     -   [**Slides**](https://rpubs.com/PeneLope_PE/1245145){target="_blank"}
 
