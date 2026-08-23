@@ -148,7 +148,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
   - [**t-Table**](https://drive.google.com/file/d/1-YnYJbk-5S5AmLs1VYovg-rxnoht3hS_/view?usp=sharing){target="_blank"}
 
-
 <br>
 
 - **Lecture 14 - Effect of Sample Size and Confidence level
@@ -161,7 +160,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
   - [**PDF**](https://drive.google.com/file/d/1QTKUEHi59h-ufQ5PVbTdssKj1wabyERf/view?usp=sharing){target="_blank"}
 
   - [**t-Table**](https://drive.google.com/file/d/1-YnYJbk-5S5AmLs1VYovg-rxnoht3hS_/view?usp=sharing){target="_blank"}
-
 
 <br>
 
@@ -188,7 +186,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
   - [**PDF**](https://drive.google.com/file/d/16OV59_uT7RNe2CaQrsOsqG8s-P3A9nsm/view?usp=sharing)
 
-
 <br>
 
 - **Lecture 8 - Sampling Distribution of the Sample Mean /
@@ -200,7 +197,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
   - [**PDF**](https://drive.google.com/file/d/1-8uq_NN7POxSsgKovo-i9USFuAFORYFV/view?usp=sharing){target="_blank"}
 
-
 <br>
 
 - **Lecture 7 - Empirical Rule / Finding X from a
@@ -211,7 +207,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
   - [**Notes**](https://rpubs.com/PeneLope_PE/1220821){target="_blank"}
 
   - [**PDF**](https://drive.google.com/file/d/1-29uIhO6YSI_jGL8472QZx99xQ1WdxH-/view?usp=sharing){target="_blank"}
-
 
 <br>
 
@@ -238,7 +233,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
   - [**PDF**](https://drive.google.com/file/d/1ugev0bGNZU1_fR4qUDkydQhEgG3hRTY5/view?usp=sharing){target="_blank"}
 
-
 <br>
 
 - **Lecture 4 - Data Visualizations, Boxplots, Outliers**
@@ -259,7 +253,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
   - [**PDF**](https://drive.google.com/file/d/1o5O5NY2gcX0oDGzniBb_cQJdGEZCRZPn/view?usp=sharing){target="_blank"}
 
-
 <br>
 
 - **Lecture 2 - Measures of Central Tendancy**
@@ -270,7 +263,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
   - [**PDF**](https://drive.google.com/file/d/1B7X9kvma8Tfdrj1jkJmurekhhTH8rKll/view?usp=sharing){target="_blank"}
 
-
 <br>
 
 - **Lecture 1 - Course Introductions and Types of Data**
@@ -280,7 +272,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
   - [**Notes**](https://rpubs.com/PeneLope_PE/1211543){target="_blank"}
 
   - [**PDF**](https://drive.google.com/file/d/1mbjjq4OMmBb81ELnYVK73EVp0nIowyX8/view?usp=sharing){target="_blank"}
-
 
 <br>
 
@@ -301,7 +292,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
   - [**Notes**](https://rpubs.com/PeneLope_PE/1253626){target="_blank"}
 
   - [**PDF**](https://drive.google.com/file/d/1Y48deDOVxyKr7PQWAHy2xgqM4ZNfn7-0/view?usp=sharing){target="_blank"}
-
 
 <br>
 
@@ -345,7 +335,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
 <br>
 
-
 **Hypotheses and Correlations**
 
 - **Lecture 20 - Introduction to Correlation and
@@ -356,7 +345,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
   - [**Notes**](https://rpubs.com/PeneLope_PE/1239230){target="_blank"}
 
   - [**PDF**](https://drive.google.com/file/d/1CvWpRPqul2sx2PI121_ryCa0P_cV8jRc/view?usp=sharing){target="_blank"}
-
 
 <br>
 
@@ -382,7 +370,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 
   - [**PDF**](https://drive.google.com/file/d/1bxnZjFgGjISe0zjIeja2Kmr4Lx7EKWa4/view?usp=sharing){target="_blank"}
 
-
 <br>
 
 - **Lecture 17 - Language of Hypothesis Testing/One Sample
@@ -393,7 +380,6 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
   - [**Notes**](https://rpubs.com/PeneLope_PE/1235311){target="_blank"}
 
   - [**PDF**](https://drive.google.com/file/d/1XujkJNFOnC7viS_VqTQA_6Bl09RradHz/view?usp=sharing){target="_blank"}
-
 
 # Installing R and Rstudio
 
@@ -419,14 +405,16 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
   Network**](https://cran.r-project.org/){target="_blank"}
 
 - [**Video Demo for downloading and installing R on a
-  Windows OS**](https://video.syr.edu/media/t/1_m775pb4g/352723432){target="_blank"}
+  Windows
+  OS**](https://video.syr.edu/media/t/1_m775pb4g/352723432){target="_blank"}
 
 - Mac installation is similar.
 
 - If you do not need to uninstall an out-of-date version of
   R, skip to 0:53.
 
-- The current version of R is **`4.6.1`**, which was released on June 24, 2026.
+- The current version of R is **`4.6.1`**, which was
+  released on June 24, 2026.
 
 <br>
 
@@ -448,4 +436,5 @@ AI**](https://www.nytimes.com/2025/06/18/learning/we-need-to-chat-gpt.html?smid=
 - The version shown in the video is from August of 2024 and
   is out-of-date.
 
-- The current version of RStudio is **`2026.8.1.195`**, which was published on August 18, 2026.
+- The current version of RStudio is **`2026.8.1.195`**,
+  which was published on August 18, 2026.
